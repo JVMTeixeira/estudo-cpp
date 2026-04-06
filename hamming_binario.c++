@@ -3,7 +3,7 @@
 unsigned long long contar_bits(unsigned long long x){
     int num_bits = 0;
     while (x > 0){
-        if((x & 1) == 1) num_bits++;
+        if((x & 1ULL) == 1) num_bits++;
 
         x = x >> 1;
     }
